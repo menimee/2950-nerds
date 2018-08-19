@@ -25,7 +25,31 @@
 
  <main>
   <section class="left-column">
-    <!--Тут будет форма-->
+    <div class="form">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <p>Стоимость:</p>
+      <input type="range" min="0" max="15000">
+
+      <input type="radio" name="item-grid" value="adapted" id="item-adapted">
+      <label for="item-adapted">Адаптивная</label>
+      <input type="radio" name="item-grid" value="fixed" id="item-fixed">
+      <label for="item-fixed">Фиксированная</label>
+      <input type="radio" name="item-grid" value="rubber" id="item-rubber">
+      <label for="item-rubber">Резиновая</label>
+      <p>Особенности:</p>
+      <input type="checkbox" name="slider" id="slider">
+      <label for="slider">Слайдер</label>
+      <input type="checkbox" name="advantage" id="advantage">
+      <label for="advantage">Блок преимуществ</label>
+      <input type="checkbox" name="news" id="news">
+      <label for="news">Новости</label>
+      <input type="checkbox" name="gallery" id="gallery">
+      <label for="gallery">Галерея</label>
+      <input type="checkbox" name="basket" id="basket">
+      <label for="basket">Корзина</label>
+      <button type="submit">Показать</button>
+    </form>
+    </div>
   </section>
 
   <section class="right-column">
@@ -155,11 +179,24 @@
     <p class="discount-social">Скидка 10% для друзей из социальныех сетей.</p>
   </div>
 </footer>
+
 <section class="modal">
-  <p>Напишите нам</p>
-  <!--Здесь будет форма-->
-  <span class="modal-close">x</span>
-</section>
+    <p>Напишите нам</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="emai@example.com">
+          </p>
+          <p>Текст письма:</p>
+          <textarea name="comment" rows="5" cols="10" placeholder="В свободной форме"></textarea>
+      </form>
+    <button class="button" type="submit">Отправить</button>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 </body>
 </html>  
