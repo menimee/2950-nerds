@@ -4,7 +4,7 @@ body{
 
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
-	font-height: 24px;
+	line-height: 24px;
 	font-weight: 400;
 	color: #000000;
 
@@ -18,10 +18,10 @@ a{
 .main-header{
 	background-color: #eeeeee;
 }
-
+    /*Навигация*/
 .main-navigation{
 	font-size: 16px;
-	font-height: 30px;
+	line-height: 30px;
 	color: #000000;
 }
 
@@ -45,4 +45,30 @@ a{
 .basket a:active{
 	color: #000000;
 	opacity: 0.3;
+}
+    /*Слайдер*/
+.slider-left h2,
+.slider-center h2,
+.slider-right h2{
+	font-size: 55px;
+	line-height: 55px;
+	text-align: left;
+}
+
+.slider-info{
+	text-align: left;
+}
+    /*Веб-сайты,Приложения,Презентации*/
+.work-site{
+	list-style: none;
+}
+
+.work-site h3{
+	font-size: 24px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.work-site p{
+	text-align: left;
 }
