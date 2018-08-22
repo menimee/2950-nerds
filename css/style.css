@@ -67,8 +67,31 @@ a{
 	font-size: 24px;
 	line-height: 30px;
 	text-align: left;
+	text-transform: uppercase;
 }
 
 .work-site p{
 	text-align: left;
+}
+    /*Промо с лева*/
+.promo-big{
+	font-size: 45px;
+	line-height: 45px;
+	text-align: left;
+}
+
+.promo-little{
+	text-align: left;
+}
+
+.promo-work{
+	list-style: none;
+}
+    /*Промо с права*/
+.procent{
+	font-size: 45px;
+}
+
+.procent-work{
+	line-height: 18px;
 }
