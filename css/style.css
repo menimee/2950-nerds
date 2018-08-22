@@ -95,3 +95,31 @@ a{
 .procent-work{
 	line-height: 18px;
 }
+    /*Бренды*/
+.brand-logo a{
+	opacity: 0.2;
+}
+
+.brand-logo a:hover{
+	opacity: 1;
+}
+
+.brand-logo a:active{
+	opacity: 0.1;
+}
+   /*Карта.Адрес на карте*/
+.map-info{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.map-contact p{
+   line-height: 18px;
+}
+    /*Футер*/
+.discount-frend{
+	font-size: 36px;
+	font-weight: bold;
+    line-height: 36px;
+}    
