@@ -122,4 +122,37 @@ a{
 	font-size: 36px;
 	font-weight: bold;
     line-height: 36px;
-}    
+}
+    /*Попап*/
+.modal {
+    font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+} 
+
+.modal-promo{
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"]{
+	font-size: 16px;
+	color: #d7dcde;
+	border: 2px solid #d7dcde;
+}
+
+.login-form input:hover{
+	border-color: #b4b9bb;
+}
+
+.login-form input:focus{
+	color: #000000;
+	border-color: #000000;
+}
+
+
+  /*Страница каталога*/
+h1{
+	font-size: 55px;
+}
