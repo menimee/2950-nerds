@@ -59,11 +59,11 @@ a{
 	text-align: left;
 }
     /*Веб-сайты,Приложения,Презентации*/
-.work-site{
+.work{
 	list-style: none;
 }
 
-.work-site h3{
+.work h3{
 	font-size: 24px;
 	line-height: 30px;
 	text-align: left;
