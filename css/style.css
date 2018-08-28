@@ -208,9 +208,26 @@ body{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 80px;
+	margin-bottom: 80px;
 	padding: 0px;
 }
 
 .work li{
 	width: 300px;
+}
+
+.promo{
+	display: flex;
+	justify-content: space-between;
+    margin-top: 80px;
+	margin-bottom: 80px;
+	padding: 0px;
+}
+
+.left-promo{
+	width: 660px;
+}
+
+.right-promo{
+	width: 360px;
 }
