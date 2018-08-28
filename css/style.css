@@ -231,3 +231,34 @@ body{
 .right-promo{
 	width: 360px;
 }
+
+.brand-logo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.brand-logo a{
+	width: 260px;
+}
+
+.main-footer{
+	display: flex;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.footer-button{
+	width: 260px;
+	align-items: center;
+	display: flex;
+}
+
+.main-footer-wrapper{
+    width: 140px;
+}
+
+.discount{
+	width: 560px;
+}
