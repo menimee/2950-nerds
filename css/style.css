@@ -156,3 +156,45 @@ a{
 h1{
 	font-size: 55px;
 }
+
+
+
+ /* ------Стили сетки*------*/
+
+
+html,
+body{
+	min-height: 2475px;
+	min-width: 1200px;
+}
+
+.main-header{
+	padding-top: 45px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.main-logo{
+	width: 160px;
+}
+
+.site-navigation{
+	width: 440px;
+}
+
+.user-basket{
+	width: 160px;
+}
+
+.basket{
+	margin-left: 95px;
+}
+
+.main-navigation{
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation{
+    display: flex;
+	justify-content: space-between;
+}
