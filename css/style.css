@@ -198,3 +198,19 @@ body{
     display: flex;
 	justify-content: space-between;
 }
+
+.container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.work{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+	padding: 0px;
+}
+
+.work li{
+	width: 300px;
+}
