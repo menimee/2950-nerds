@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
+  <header class="main-header main-header-catalog">
     <nav class="main-navigation">
     	<a class="main-logo" href="index.html">
         <img src="img/nerds-logo.png" width="160" height="65" alt="Nerd's-дизайн студия из Краснодара">
@@ -30,44 +30,62 @@
   <div class="colum-catalog">
   <section class="left-column">
     <div class="form">
-    <form action="https://echo.htmlacademy.ru" method="get" class="form">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <p>Стоимость:</p>
+      <div class="item">
       <input type="range" min="0" max="15000">
       <!--Здесь будет значения ОТ и ДО -->
+      <div>
+      <div class="item">
       <input type="radio" name="item-grid" value="adapted" id="item-adapted">
       <label for="item-adapted">
       Адаптивная
       </label>
+      <div>
+      <div class="item">
       <input type="radio" name="item-grid" value="fixed" id="item-fixed">
       <label for="item-fixed">
       Фиксированная
       </label>
+      <div>
+      <div class="item">
       <input type="radio" name="item-grid" value="rubber" id="item-rubber">
       <label for="item-rubber">
       Резиновая
       </label>
+      <div>
 
       <p>Особенности:</p>
+      <div class="item">
       <input type="checkbox" name="slider" id="slider">
       <label for="slider">
       Слайдер
       </label>
+      <div>
+      <div class="item">
       <input type="checkbox" name="advantage" id="advantage">
       <label for="advantage">
       Блок преимуществ
       </label>
+      <div>
+      <div class="item">
       <input type="checkbox" name="news" id="news">
       <label for="news">
       Новости
       </label>
+      <div>
+      <div class="item">
       <input type="checkbox" name="gallery" id="gallery">
       <label for="gallery">
       Галерея
       </label>
+      <div>
+      <div class="item">
       <input type="checkbox" name="basket" id="basket">
       <label for="basket">
       Корзина
       </label>
+      <div>
       <button type="submit">Показать</button>
     </form>
     </div>
@@ -108,7 +126,7 @@
         <img src="img/img-pink.png" width="360" height="576" alt="Pink">
       <div class="second-footer">
         <a href="#" class="pink-href">PINK APP</a>
-        <p>Продуктовый лендинг приложения для iOS и Android</p>
+        <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
         <button class="pink-price">9 900 РУБ.</button>
       </div>
       </div>
@@ -195,6 +213,7 @@
     <a href="#" class="social-button" aria-label="Мы в Фейсбук">Фейсбук</a>
     <a href="#" class="social-button" aria-label="Мы в Инстаграм">Инстаграм</a>
   </div>
+  <div class="main-footer-wrapper"></div>
   <div class="discount">
     <p class="discount-frend">Давайте дружить,это выгодно!</p>
     <p class="discount-social">Скидка 10% для друзей из социальныех сетей.</p>

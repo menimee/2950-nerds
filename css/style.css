@@ -15,8 +15,12 @@ a{
 	text-decoration: none;
 }
 
+.main-header-catalog{
+	height: 280px;
+}
 .main-header{
 	background-color: #eeeeee;
+
 }
     /*Навигация*/
 .main-navigation{
@@ -162,6 +166,7 @@ h1{
 
 .catalog-item a{
 	font-size: 18px;
+	font-weight: bold;
 }
 
 .catalog{
