@@ -155,9 +155,18 @@ a{
   /*Страница каталога*/
 h1{
 	font-size: 55px;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 110px;
 }
 
+.catalog-item a{
+	font-size: 18px;
+}
 
+.catalog{
+	text-align: center;
+}
 
  /* ------Стили сетки*------*/
 
@@ -261,4 +270,30 @@ body{
 
 .discount{
 	width: 560px;
+}
+
+      /*----Flex catalog-----*/
+
+.colum-catalog{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.form{
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+}
+
+.right-column{
+	width: 760px;
+	display: flex
+	flex-direction: column;
+}
+
+.catalog{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
