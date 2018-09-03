@@ -74,7 +74,7 @@ a{
     /*Веб-сайты,Приложения,Презентации*/
 .work{
 	list-style: none;
-	border-bottom: 2px solid #eeeeee;
+
 }
 
 .work h3{
@@ -169,7 +169,23 @@ a{
 .promo-work{
 	list-style: none;
 }
-    /*Промо с права*/
+
+.promo-work li::before{
+	content: "";
+	position: absolute;
+	left: -35px;
+	top: 9px;
+    width: 25px;
+    border: 1px solid #fb565a;
+}
+
+.promo-work li{
+	position: relative;
+	margin-bottom: 20px;
+}      
+
+
+      /*Промо с права*/
 .procent{
 	font-size: 45px;
 }
@@ -177,7 +193,14 @@ a{
 .procent-work{
 	line-height: 18px;
 }
+
+.right-promo table{
+    border-spacing: 0px 20px;
+}
+
+
     /*Бренды*/
+
 .brand-logo a{
 	opacity: 0.2;
 }
@@ -308,6 +331,7 @@ body{
 }
 
 .promo{
+	border-top: 2px solid #eeeeee;
 	display: flex;
 	justify-content: space-between;
     margin-top: 80px;
