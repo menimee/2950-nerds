@@ -195,7 +195,7 @@ a{
 }
 
 .right-promo table{
-    border-spacing: 0px 20px;
+    border-spacing: 0px 30px;
 }
 
 
@@ -212,16 +212,56 @@ a{
 .brand-logo a:active{
 	opacity: 0.1;
 }
+
+
+
+
    /*Карта.Адрес на карте*/
+
+.map{
+	background-image: url("img/map.png");
+	background-repeat: no-repeat;
+	height: 416px;
+}
+
 .map-info{
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
+	padding-top: 55px;
+	padding-left: 50px;
 }
 
-.map-contact p{
-   line-height: 18px;
+.map-addres{
+	padding-top: 30px;
+	padding-left: 50px;
 }
+
+.map-tel{
+	padding-left: 50px;
+	padding-top: 15px;
+}
+
+.map-contact {
+	width: 320px;
+	height: 310px;
+}
+
+.map-button{
+	display: inline-block;
+    width: 220px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #fb565a;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    border-radius: 3px;
+}
+
+
     /*Футер*/
 .discount-frend{
 	font-size: 36px;
@@ -407,7 +447,7 @@ body{
      /*  слайдер */     
 
 .container {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
