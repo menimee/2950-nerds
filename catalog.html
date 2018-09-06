@@ -74,36 +74,41 @@
 
       <p>Особенности:</p>
       <div class="item">
-      <input type="checkbox" name="slider" id="slider">
-      <label for="slider">
-      Слайдер
-      </label>
+        <label for="slider">
+          <input class="checkbox" type="checkbox" name="slider" id="slider">
+          <span class="checkbox-custom"></span>
+          <span class="label">Слайдер</span>
+        </label>
       </div>
       <div class="item">
-      <input type="checkbox" name="advantage" id="advantage">
-      <label for="advantage">
-      Блок преимуществ
-      </label>
+        <label for="advantage">
+          <input class="checkbox" type="checkbox" name="advantage" id="advantage">
+          <span class="checkbox-custom"></span>
+          <span class="label">Блок преимуществ</span>
+        </label>
       </div>
       <div class="item">
-      <input type="checkbox" name="news" id="news">
-      <label for="news">
-      Новости
-      </label>
+        <label for="news">
+          <input class="checkbox" type="checkbox" name="news" id="news">
+          <span class="checkbox-custom"></span>
+          <span class="label">Новости</span>
+        </label>
       </div>
       <div class="item">
-      <input type="checkbox" name="gallery" id="gallery">
-      <label for="gallery">
-      Галерея
-      </label>
+        <label for="gallery">
+          <input class="checkbox" type="checkbox" name="gallery" id="gallery">
+          <span class="checkbox-custom"></span>
+          <span class="label">Галерея</span>
+        </label>
       </div>
       <div class="item">
-      <input type="checkbox" name="basket" id="basket">
-      <label for="basket">
-      Корзина
-      </label>
+        <label for="basket">
+          <input class="checkbox" type="checkbox" name="basket" id="basket">
+          <span class="checkbox-custom"></span>
+          <span class="label">Корзина</span>
+        </label>
       </div>
-      <button type="submit">Показать</button>
+      <button class="form-button" type="submit">Показать</button>
     </form>
     </div>
   </section>
@@ -114,10 +119,12 @@
       <a href="#" class="catalog-sort-option">по цене</a>
       <a href="#" class="catalog-sort-option">по типу</a>
       <a href="#" class="catalog-sort-option">по названию</a>
-    </div>
-    <div class="catalog-arrow">
-      <a href="#"></a>
-      <a href="#"></a>
+      <a href="#" class="button-arrow-down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+      </a>
+      <a href="#" class="button-arrow-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+      </a>
     </div>
 
     <div class="catalog">
@@ -129,74 +136,74 @@
       </div>
         <img src="img/img-sedona.png" width="360" height="576" alt="Sedona">
       <div class="first-footer">
-        <a href="#" class="sedona-href">SEDONA</a>
+        <a href="#" class="catalog-href">SEDONA</a>
         <p>Информационный сайт для туристов</p>
-        <button class="sedona-price">9 900 РУБ.</button>
+        <button class="catalog-price">9 900 РУБ.</button>
       </div>
       </div>
       <div class="catalog-item">
-      <div class="catalog-second">
+      <div class="catalog-first">
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
       </div>
         <img src="img/img-pink.png" width="360" height="576" alt="Pink">
       <div class="second-footer">
-        <a href="#" class="pink-href">PINK APP</a>
+        <a href="#" class="catalog-href">PINK APP</a>
         <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
-        <button class="pink-price">9 900 РУБ.</button>
+        <button class="catalog-price">9 900 РУБ.</button>
       </div>
       </div>
       <div class="catalog-item">
-      <div class="catalog-third">
+      <div class="catalog-first">
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
       </div>
         <img src="img/img-barbershop.png" width="360" height="576" alt="Borodinski">
       <div class="third-footer">
-        <a href="#" class="barbershop-href">BARBERSHOP</a>
+        <a href="#" class="catalog-href">BARBERSHOP</a>
         <p>Сайт салон красоты.Для мужчин,да.</p>
-        <button class="barbershop-price">9 900 РУБ.</button>
+        <button class="catalog-price">9 900 РУБ.</button>
       </div>
       </div>
       <div class="catalog-item">
-      <div class="catalog-fourth">
+      <div class="catalog-first">
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
       </div>
         <img src="img/img-mishka.png" width="360" height="576" alt="Mishki">
       <div class="fourth-footer">
-        <a href="#" class="mishka-href">MISHKA</a>
+        <a href="#" class="catalog-href">MISHKA</a>
         <p>Интернет-магазин вязаных игрушек</p>
-        <button class="mishka-price">9 900 РУБ.</button>
+        <button class="catalog-price">9 900 РУБ.</button>
       </div>
       </div>
       <div class="catalog-item">
-      <div class="catalog-fifth">
+      <div class="catalog-first">
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
       </div>
         <img src="img/img-aplus.png" width="360" height="576" alt="Aplus">
       <div class="fifth-footer">
-        <a href="#" class="aplus-href">A PLUS</a>
+        <a href="#" class="catalog-href">A PLUS</a>
         <p>Лендинг курсов повышения квалификации</p>
-        <button class="aplus-price">9 900 РУБ.</button>
+        <button class="catalog-price">9 900 РУБ.</button>
       </div>
       </div>
       <div class="catalog-item">
-      <div class="catalog-sixth">
+      <div class="catalog-first">
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
         <span class="catalog-circle"></span>
       </div>
         <img src="img/img-kvast.png" width="360" height="576" alt="Kvast">
       <div class="sixth-footer">
-        <a href="#" class="kvast-href">КВАСТ</a>
+        <a href="#" class="catalog-href">КВАСТ</a>
         <p>Промо-сайт производителя крафтового кваса</p>
-        <button class="kvast-price">9 900 РУБ.</button>
+        <button class="catalog-price">9 900 РУБ.</button>
       </div>
       </div>
     </div>
