@@ -30,30 +30,47 @@
   <div class="colum-catalog">
   <section class="left-column">
     <div class="form">
-    <form action="https://echo.htmlacademy.ru" method="get">
-      <p>Стоимость:</p>
+    <form action="https://echo.htmlacademy.ru" method="get" class="form">
+      <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <p>Сетка</p>
       <div class="item">
-      <input type="range" min="0" max="15000">
-      <!--Здесь будет значения ОТ и ДО -->
-      <div>
+        <label for="item-adapted">
+          <input class="radio" type="radio" name="item-grid" value="adapted" id="item-adapted">
+          <span class="radio-custom"></span>
+          <span class="label">Адаптивная</span>
+        </label>
+      </div>
       <div class="item">
-      <input type="radio" name="item-grid" value="adapted" id="item-adapted">
-      <label for="item-adapted">
-      Адаптивная
+        <label for="item-fixed">
+          <input class="radio" type="radio" name="item-grid" value="fixed" id="item-fixed">
+          <span class="radio-custom"></span>
+          <span class="label">Фиксированная</span>
+        </label>
+      </div>
+      <div class="item">
+        <label for="item-rubber">
+          <input class="radio" type="radio" name="item-grid" value="rubber" id="item-rubber">
+          <span class="radio-custom"></span>
+          <span class="label">Резиновая</span>
       </label>
-      <div>
-      <div class="item">
-      <input type="radio" name="item-grid" value="fixed" id="item-fixed">
-      <label for="item-fixed">
-      Фиксированная
-      </label>
-      <div>
-      <div class="item">
-      <input type="radio" name="item-grid" value="rubber" id="item-rubber">
-      <label for="item-rubber">
-      Резиновая
-      </label>
-      <div>
+      </div>
 
       <p>Особенности:</p>
       <div class="item">
@@ -61,31 +78,31 @@
       <label for="slider">
       Слайдер
       </label>
-      <div>
+      </div>
       <div class="item">
       <input type="checkbox" name="advantage" id="advantage">
       <label for="advantage">
       Блок преимуществ
       </label>
-      <div>
+      </div>
       <div class="item">
       <input type="checkbox" name="news" id="news">
       <label for="news">
       Новости
       </label>
-      <div>
+      </div>
       <div class="item">
       <input type="checkbox" name="gallery" id="gallery">
       <label for="gallery">
       Галерея
       </label>
-      <div>
+      </div>
       <div class="item">
       <input type="checkbox" name="basket" id="basket">
       <label for="basket">
       Корзина
       </label>
-      <div>
+      </div>
       <button type="submit">Показать</button>
     </form>
     </div>
@@ -194,24 +211,30 @@
   </div>
   <section class="map">
     <div class="map-contact">
-      <p>NERDS DESIGN STUDIO</p>
-      <p>
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8<br>
-      </p>
-      <p>
-        тел. =7(812)275-75-75
-      </p>
-      <a href="#">напишите нам</a>
+        <p class="map-info">NERDS DESIGN STUDIO</p>
+        <p class="map-addres">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+        </p>
+        <p class="map-tel">
+          тел. +7(812)275-75-75
+        </p>
+        <a href="#" class="map-button">напишите нам</a>
     </div>
   </section>
 </main>
 
 <footer class="main-footer">
   <div class="footer-button">
-    <a href="#" class="social-button" aria-label="Мы в Контакте">Вконтакте</a>
-    <a href="#" class="social-button" aria-label="Мы в Фейсбук">Фейсбук</a>
-    <a href="#" class="social-button" aria-label="Мы в Инстаграм">Инстаграм</a>
+    <a href="#" class="social-button" aria-label="Мы в Контакте">
+        <img src="img/vk-icon.png" alt="ВКонтакте">
+      </a>
+      <a href="#" class="social-button" aria-label="Мы в Фейсбук">
+        <img src="img/fb-icon.png" alt="Фейсбук">
+        </a>
+      <a href="#" class="social-button" aria-label="Мы в Инстаграм">
+        <img src="img/insta-icon.png" alt="Инстаграм">
+      </a>
   </div>
   <div class="main-footer-wrapper"></div>
   <div class="discount">

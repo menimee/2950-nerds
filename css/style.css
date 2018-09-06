@@ -40,10 +40,12 @@ a{
     width: 15px;
     height: 15px;
 
-    background-image: url("img/cart-icon.png");
+    background-image: url("../img/cart-icon.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
+
 
 .site-navigation a,
 .basket a{
@@ -219,16 +221,15 @@ a{
    /*Карта.Адрес на карте*/
 
 .map{
-	background-image: url("img/map.png");
+	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
 	height: 416px;
 }
 
 .map-info{
 	font-size: 18px;
-	line-height: 30px;
 	font-weight: bold;
-	padding-top: 55px;
+	padding-top: 50px;
 	padding-left: 50px;
 }
 
@@ -245,6 +246,9 @@ a{
 .map-contact {
 	width: 320px;
 	height: 310px;
+	background-color: #ffffff;
+	position: relative;
+	top: 50px;
 }
 
 .map-button{
@@ -268,6 +272,21 @@ a{
 	font-weight: bold;
     line-height: 36px;
 }
+
+.social-button{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 80px;
+	height: 80px;
+	background-color: #e1e1e1;
+    text-align: center;
+    border-radius: 50% 50%;
+}
+
+
+
+
     /*Попап*/
 .modal {
     font-size: 16px;
@@ -304,6 +323,55 @@ h1{
 	margin-top: 70px;
 	margin-bottom: 110px;
 }
+
+.left-column p{
+	font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+.radio-custom {
+	width: 18px;
+	height: 18px;
+	border: 3px solid #a6a6a6;
+	border-radius: 50%;
+	position: relative;
+}
+
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.radio:checked + .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	bottom: 4px;
+	left: 4px;
+	background: #a6a6a6;
+	border-radius: 2px;
+}
+
+.radio:checked + .radio-custom::before {
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
 
 .catalog-item a{
 	font-size: 18px;
@@ -408,6 +476,7 @@ body{
 	width: 260px;
 	align-items: center;
 	display: flex;
+	justify-content: space-between;
 }
 
 .main-footer-wrapper{
@@ -528,19 +597,19 @@ body{
 }
 
 .slider-item:nth-child(1) {
-  background-image: url("img/slide1.png");
+  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("img/slide2.png");
+  background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("img/slide3.png");
+  background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -615,4 +684,108 @@ body{
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+/*--- Котнтроллер формы---*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none; 
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
