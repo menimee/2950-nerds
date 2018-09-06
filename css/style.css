@@ -461,11 +461,22 @@ input[type="radio"] {
     fill: #272324;
 }
 
+
+
     /*--------------*/
 
-.catalog-first{
+.catalog{
+	text-align: center;
+}
+
+.catalog-header{
 	height: 40px;
 	background-color: #e9e9e9;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 3px 3px 0 0;
 }
 
 .catalog-circle{
@@ -473,26 +484,73 @@ input[type="radio"] {
     height: 15px;
     border-radius: 50%;
     background-color: #ffffff;
+    margin-left: 5px;
 }
 
+.catalog-footer{
+	height: 230px;
+	width: 360px;
+	background-color: #eeeeee;
+	display: none;
+	position: absolute;
+	bottom: 0;
+}
 
 .catalog-item a{
 	font-size: 18px;
 	font-weight: bold;
+	color: #000000;
+	display: block;
+	padding-top: 30px;
+	margin-bottom: 25px;
+}
+.catalog-footer p{
+	color: #666666;
 }
 
-.catalog{
+.catalog-price{
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #fb565a;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.catalog-price:hover{
+	background-color: #e74246;
+}
+
+.catalog-price:active{
+	background-color: #d7373b;
+}
+
+.catalog-item{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.catalog-item:hover .catalog-footer{
+    display: block;
+}
+
+.catalog-item:hover .catalog-header{
+    background-color: #4d4d4d;
+}
+
+.catalog-switch-active{
+	display: block;
+	height: 45px;
+	width: 45px;
+	background-color: #ffffff;
+	border: 3px solid #eeeeee;
 	text-align: center;
+	line-height: 45px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -627,6 +685,13 @@ body{
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+.catalog-switch{
+	display: flex;
+	
+}
+
+
 
      /*  слайдер */     
 
