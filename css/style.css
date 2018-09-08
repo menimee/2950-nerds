@@ -33,8 +33,12 @@ a{
 	width: 440px;
 	margin-left: -50px;
 	margin-top: 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 
@@ -195,8 +199,12 @@ a{
 
 .promo{
 	border-top: 2px solid #eeeeee;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
     margin-top: 80px;
 	margin-bottom: 46px;
 	padding: 0px;
@@ -285,8 +293,12 @@ a{
 .brand-logo{
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-top: 20px;
 	margin-bottom: 80px; 
 }
@@ -389,6 +401,8 @@ a{
 
 .main-footer{
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-top: 35px;
 	margin-bottom: 70px;
@@ -398,9 +412,15 @@ a{
 
 .footer-button{
 	width: 260px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-top: 15px;
 }
 
@@ -424,9 +444,15 @@ a{
 }
 
 .social-button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 	width: 78px;
 	height: 78px;
 	background-color: #e1e1e1;
@@ -458,7 +484,8 @@ a{
 	line-height: 18px;
 	font-weight: bold;
 	background-color: #ffffff;
-	box-shadow: 0 20px 40px 0 rgba(0,1,1,.75)
+	-webkit-box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
+	        box-shadow: 0 20px 40px 0 rgba(0,1,1,.75)
 } 
 
 .modal-promo{
@@ -499,14 +526,24 @@ a{
 }
 
 .modal-column{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .modal-left-column,
 .modal-right-column{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .login-form input,
@@ -571,11 +608,15 @@ a{
 }
 
 .modal-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-close:hover::before,
@@ -596,24 +637,52 @@ a{
 	position: absolute;
 	bottom: 110px;
 
-	animation: bounce 0.6s;
+	-webkit-animation: bounce 0.6s;
+
+	        animation: bounce 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+
+  90% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
 
   90% {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -711,6 +780,8 @@ input[type="radio"] {
 	bottom: 2px;
 	left: 2px;    
 	border-radius: 2px;
+	font-size: 22px;
+	color: #a6a6a6;
 }
 
 
@@ -794,9 +865,14 @@ input[type="radio"] {
 
 .catalog{
 	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-top: 51px;
 }
 
@@ -804,9 +880,16 @@ input[type="radio"] {
 .catalog-header{
 	height: 40px;
 	background-color: #e9e9e9;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 10px;
     border-radius: 3px 3px 0 0;
 }
@@ -875,6 +958,8 @@ input[type="radio"] {
 }
 
 .catalog-switch{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-top: 25px;	
 }
@@ -923,8 +1008,12 @@ body{
 }
 
 .main-navigation{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .container{
@@ -933,8 +1022,12 @@ body{
 }
 
 .work{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	padding: 0px;
@@ -948,22 +1041,29 @@ body{
       /*----Flex catalog-----*/
 
 .colum-catalog{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding: 0 20px;
 	margin-bottom: 60px;
 }
 
 .form{
 	width: 260px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .right-column{
 	width: 760px;
-	display: flex
-	flex-direction: column;
 }
 
 
@@ -973,7 +1073,8 @@ body{
   min-width: 1200px;
   margin: 0 auto;
   padding: 0 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -1000,7 +1101,9 @@ body{
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .slider-controls label {
@@ -1130,7 +1233,8 @@ body{
 .button:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 
@@ -1194,7 +1298,8 @@ body{
 
   border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
 }
