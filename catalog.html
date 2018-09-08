@@ -16,7 +16,7 @@
       <ul class="site-navigation">
        <li><a href="studio.html">студия</a></li>
        <li><a href="customers.html">клиенты</a></li>
-       <li><a>магазин</a></li>
+       <li><a class="in-active">магазин</a></li>
        <li><a href="contacts.html">контакты</a></li>
      </ul>
      <ul class="user-basket">
@@ -49,7 +49,7 @@
       </fieldset>
 
 
-      <p>Сетка</p>
+      <p>Сетка:</p>
       <div class="item">
         <label for="item-adapted">
           <input class="radio" type="radio" name="item-grid" value="adapted" id="item-adapted">
@@ -72,7 +72,7 @@
       </label>
       </div>
 
-      <p>Особенности:</p>
+      <p class="left-feature">Особенности:</p>
       <div class="item">
         <label for="slider">
           <input class="checkbox" type="checkbox" name="slider" id="slider">
@@ -221,6 +221,8 @@
     </div>
   </section>
   </div>
+  </main>
+
   <section class="map">
     <div class="map-contact">
         <p class="map-info">NERDS DESIGN STUDIO</p>
@@ -234,7 +236,6 @@
         <a href="#" class="map-button">напишите нам</a>
     </div>
   </section>
-</main>
 
 <footer class="main-footer">
   <div class="footer-button">
@@ -253,25 +254,29 @@
     <p class="discount-frend">Давайте дружить,это выгодно!</p>
     <p class="discount-social">Скидка 10% для друзей из социальныех сетей.</p>
   </div>
-</footer>
-
-<section class="modal">
+  <section class="modal">
     <p class="modal-promo">Напишите нам</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-          <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="email" name="email" placeholder="emai@example.com">
-          </p>
-          <p>Текст письма:</p>
-          <textarea name="comment" rows="5" cols="10" placeholder="В свободной форме"></textarea>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-column">
+          <div class="modal-left-column">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="modal-right-column">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="email" placeholder="emai@example.com">
+          </div>
+        </div> 
+        <div class="user-comment"> 
+          <label for="user-text">Текст письма:</label> 
+          <textarea id="user-text" name="comment" rows="6" cols="93" placeholder="В свободной форме"></textarea>
+        </div>
       </form>
-    <button class="button" type="submit">Отправить</button>
+    <button class="modal-button" type="submit">Отправить</button>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-</body>
+</footer>
+
+ <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>  

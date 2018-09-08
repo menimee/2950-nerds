@@ -24,12 +24,12 @@
 			</ul>
 		</nav>
 
-	<section class="slider">
-      <div class="container">
+	    <section class="slider">
+        <div class="slaider-container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
           <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
@@ -52,6 +52,8 @@
             <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
         </ul>
+        </div>
+        </section>
 	</header>
 
 	<main class="container">
@@ -88,7 +90,7 @@
 		<section class="left-promo">
 			<p class="promo-big">Мы - маленькая,но гордая дизайн-студия из Краснодара.</p>
 			<p class="promo-little">Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива.Работаем не покладая рук,как роботы.</p>
-			<p>выполняем заказы на разработку:</p>
+			<p class="promo-ul">выполняем заказы на разработку:</p>
 			<ul class="promo-work">
 				<li>Веб-сайтов любой сложности</li>
 				<li>Мобильных приложения для iOS и Android</li>
@@ -97,7 +99,7 @@
 		</section>
 		<section class="right-promo">
 			<img src="img/nerds-illustration.png" width="360" height="208" alt="nerds's">
-			<p>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+			<p class="right-promo-date">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
 			<table>
 				<tr>
 					<th class="procent">146<sup><small>%</small></sup></th>
@@ -116,17 +118,22 @@
 			<a href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/logo-1.png" width="199" height="68" alt="HTMLacademy">
 			</a>
+			<div class="logo-border"></div>
 			<a href="#">
 				<img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
 			</a>
+			<div class="logo-border"></div>
 			<a href="#">
 				<img src="img/logo-3.png" width="182" height="52" alt="Pink">
 			</a>
+			<div class="logo-border"></div>
 			<a href="#">
 				<img src="img/logo-4.png" width="173" height="84" alt="Mishka">
 			</a>
 		</section>
-		<section class="map">
+	</main>
+
+	<section class="map">
 			<div class="map-contact">
 				<p class="map-info">NERDS DESIGN STUDIO</p>
 				<p class="map-addres">
@@ -138,43 +145,49 @@
 				</p>
 				<a href="#" class="map-button">напишите нам</a>
 			</div>
-		</section>
-	</main>
+	</section>
 
-	<footer class="main-footer">
-		<div class="footer-button">
-			<a href="#" class="social-button" aria-label="Мы в Контакте">
-				<img src="img/vk-icon.png" alt="ВКонтакте">
-			</a>
-			<a href="#" class="social-button" aria-label="Мы в Фейсбук">
-				<img src="img/fb-icon.png" alt="Фейсбук">
-		    </a>
-			<a href="#" class="social-button" aria-label="Мы в Инстаграм">
-				<img src="img/insta-icon.png" alt="Инстаграм">
-			</a>
-		</div>
-		<div class="main-footer-wrapper"></div>
-		<div class="discount">
-			<p class="discount-frend">Давайте дружить,это выгодно!</p>
-			<p class="discount-social">Скидка 10% для друзей из социальныех сетей.</p>
-		</div>
-	</footer>
-	<section class="modal">
-		<p class="modal-promo">Напишите нам</p>
-		  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-		  	<p>
+
+    <footer class="main-footer">
+    <div class="footer-button">
+    <a href="#" class="social-button" aria-label="Мы в Контакте">
+        <img src="img/vk-icon.png" alt="ВКонтакте">
+      </a>
+      <a href="#" class="social-button" aria-label="Мы в Фейсбук">
+        <img src="img/fb-icon.png" alt="Фейсбук">
+        </a>
+      <a href="#" class="social-button" aria-label="Мы в Инстаграм">
+        <img src="img/insta-icon.png" alt="Инстаграм">
+      </a>
+    </div>
+    <div class="main-footer-wrapper"></div>
+    <div class="discount">
+    <p class="discount-frend">Давайте дружить,это выгодно!</p>
+    <p class="discount-social">Скидка 10% для друзей из социальныех сетей.</p>
+    </div>
+    <section class="modal">
+    <p class="modal-promo">Напишите нам</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-column">
+          <div class="modal-left-column">
             <label for="user-name">Ваше имя:</label>
             <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-           </p>
-           <p>
+          </div>
+          <div class="modal-right-column">
             <label for="user-email">Ваш e-mail:</label>
             <input id="user-email" type="email" name="email" placeholder="emai@example.com">
-            </p>
-            <p>Текст письма:</p>
-            <textarea name="comment" rows="5" cols="10" placeholder="В свободной форме"></textarea>
-          </form>
-          <button class="button" type="submit">Отправить</button>
-		<button class="modal-close" type="button">Закрыть</button>
-	</section>
+          </div>
+        </div> 
+        <div class="user-comment"> 
+          <label for="user-text">Текст письма:</label> 
+          <textarea id="user-text" name="comment" rows="6" cols="93" placeholder="В свободной форме"></textarea>
+        </div>
+      </form>
+    <button class="modal-button" type="submit">Отправить</button>
+    <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    </footer>
+
+ <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
