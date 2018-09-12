@@ -7,8 +7,7 @@ body{
 	line-height: 24px;
 	font-weight: 400;
 	color: #000000;
-
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 a{
@@ -73,7 +72,7 @@ a{
     background-repeat: no-repeat;
     background-position: 0 0;
     top: 82px;
-    right: 105px;
+    right: 158px;
 }
 
 
@@ -122,7 +121,7 @@ a{
 	text-align: left;
 	white-space: pre-line;
 	margin-top: -30px;
-	margin-bottom: 33px;
+	margin-bottom: 32px;
 }
 
 .work-button{
@@ -300,7 +299,6 @@ a{
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	margin-top: 20px;
-	margin-bottom: 80px; 
 }
 
 .brand-logo a{
@@ -348,12 +346,13 @@ a{
 
    /*Карта.Адрес на карте*/
 
-.map{
+.main-map-container{
 	position: relative;
 	background-image: url("../img/Untitled-1.jpg");
 	background-repeat: no-repeat;
 	height: 420px;
 	width: 100%;
+	margin-top: 80px;
 }
 .map-contact {
 	position: relative;
@@ -703,7 +702,7 @@ h1{
     /*--- Радио кнопки и чекбоксы-- */
 
 .left-column{
-	margin-top: 58px;
+	margin-top: 59px;
 }
 
 .left-column p{
@@ -999,9 +998,27 @@ input[type="radio"] {
 
 
 
-body{
-	min-width: 1200px;
+
+.main-header-container{
+	width: 100%;
+	background: #eeeeee;
 }
+
+.main-body-container,
+.main-map-container,
+.main-footer-container{
+	width: 100%;
+    background-color: #ffffff;
+}
+
+.main-container,
+.body-container,
+.map-container,
+.footer-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
 
 .main-logo{
 	width: 160px;
@@ -1019,6 +1036,7 @@ body{
 .container{
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-top: 65px;
 }
 
 .work{
@@ -1028,7 +1046,6 @@ body{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	margin-top: 80px;
 	margin-bottom: 80px;
 	padding: 0px;
 }

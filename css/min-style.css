@@ -150,7 +150,7 @@ a {
 .work p {
     white-space: pre-line;
     margin-top: -30px;
-    margin-bottom: 33px
+    margin-bottom: 32px
 }
 
 .attachment-button,.presentation-button,.work-button {
@@ -295,7 +295,6 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 80px
 }
 
 .brand-logo a {
@@ -332,12 +331,13 @@ a {
     margin-top: 66px
 }
 
-.map {
+.main-map-container {
     position: relative;
     background-image: url(../img/Untitled-1.jpg);
     background-repeat: no-repeat;
     height: 420px;
     width: 100%
+    margin-top: 80px;
 }
 
 .map-contact {
@@ -607,7 +607,7 @@ h1 {
 }
 
 .left-column {
-    margin-top: 58px
+    margin-top: 59px
 }
 
 .left-column p {
@@ -696,7 +696,7 @@ input[type=checkbox],input[type=radio] {
 }
 
 .right-column {
-    margin-top: 54px
+    margin-top: 55px
 }
 
 .catalog-sort-title {
@@ -889,6 +889,7 @@ input[type=checkbox],input[type=radio] {
 .container {
     padding-left: 20px;
     padding-right: 20px
+    padding-top: 65px;
 }
 
 .colum-catalog,.work {
@@ -901,7 +902,6 @@ input[type=checkbox],input[type=radio] {
 }
 
 .work {
-    margin-top: 80px;
     margin-bottom: 80px;
     padding: 0
 }
