@@ -354,6 +354,16 @@ a{
 	width: 100%;
 	margin-top: 80px;
 }
+
+.main-map-catalog{
+    position: relative;
+	background-image: url("../img/Untitled-1.jpg");
+	background-repeat: no-repeat;
+	height: 420px;
+	width: 100%;
+	margin-top: 60px;
+}
+
 .map-contact {
 	position: relative;
 	width: 320px;
@@ -807,7 +817,7 @@ input[type="radio"] {
     /* Каталог*/
 
 .right-column{
-	margin-top: 54px;
+	margin-top: 55px;
 }
 
 .catalog-sort-title{
@@ -872,7 +882,7 @@ input[type="radio"] {
 	        justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	margin-top: 51px;
+	margin-top: 52px;
 }
 
 
