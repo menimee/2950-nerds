@@ -71,7 +71,7 @@ a {
 
 .site-navigation {
     width: 440px;
-    margin-left: -50px;
+    margin-left: -85px;
     margin-top: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -91,10 +91,6 @@ a {
 .user-basket {
     width: 110px;
     margin-top: 25px
-}
-
-.basket {
-    margin-left: 35px
 }
 
 .basket,.site-navigation {
