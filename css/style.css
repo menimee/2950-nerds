@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-
+    min-width: 1200px;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -69,7 +69,7 @@ a{
     width: 15px;
     height: 15px;
 
-    background-image: url("../img/cart-icon.png");
+    background-image: url("../img/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     top: 7px;
@@ -374,6 +374,7 @@ a{
 	width: 100%;
 	margin-top: 80px;
 	background-position: 50% 50%;
+	display: block;
 }
 
 .main-map-catalog{
@@ -1067,7 +1068,7 @@ input[type="radio"] {
 .body-container,
 .map-container,
 .footer-container{
-	/*width: 1200px;*/
+    width: 1200px;
 	margin: 0 auto;
 }
 
@@ -1105,6 +1106,8 @@ input[type="radio"] {
 .work li{
 	width: 300px;
 }
+
+
 
 
       /*----Flex catalog-----*/
@@ -1411,3 +1414,4 @@ input[type="radio"] {
 .max-price {
   text-align: right;
 }
+
